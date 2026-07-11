@@ -156,11 +156,11 @@ How well does it perform on unseen reviews?
 
 | Metric | Negative (0) | Positive (1) |
 |--------|:-----------:|:------------:|
-| Precision | 0.20 | 0.93 |
-| Recall | 0.09 | 0.97 |
-| F1-score | 0.12 | 0.95 |
+| Precision | 0.18 | 0.92 |
+| Recall | 0.06 | 0.98 |
+| F1-score | 0.09 | 0.95 |
 
-**Accuracy: ~91%**
+**Accuracy: ~90%**
 
 ---
 
@@ -172,11 +172,11 @@ How well does it perform on unseen reviews?
 
 | Metric | Negative (0) | Positive (1) |
 |--------|:-----------:|:------------:|
-| Precision | 0.18 | 0.93 |
-| Recall | 0.04 | 0.98 |
-| F1-score | 0.07 | 0.96 |
+| Precision | 0.20 | 0.92 |
+| Recall | 0.02 | 0.99 |
+| F1-score | 0.03 | 0.95 |
 
-**Accuracy: ~92%**
+**Accuracy: ~91%**
 
 ---
 
@@ -184,10 +184,10 @@ How well does it perform on unseen reviews?
 
 | Model | Accuracy | Negative F1 | Positive F1 |
 |-------|:--------:|:-----------:|:-----------:|
-| 🤖 Naive Bayes | 91% | 0.12 | 0.95 |
-| 📈 Logistic Regression | **92%** | 0.07 | **0.96** |
+| 🤖 Naive Bayes | 90% | 0.09 | 0.95 |
+| 📈 Logistic Regression | **91%** | 0.03 | **0.95** |
 
-**Both models perform well on positive reviews but struggle with negative ones** — this is a direct result of the class imbalance: ~91% of reviews are positive, so the model rarely sees enough negative examples to learn their patterns well.
+Logistic Regression achieved the highest accuracy (91%), while Naive Bayes detected negative reviews slightly better. Overall, both models performed well on positive reviews but struggled with negative reviews because the dataset is highly imbalanced (~91% positive reviews).
 
 ---
 
